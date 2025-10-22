@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+body { 
+    font-family: sans-serif; 
+    padding: 20px; 
+}
+
+h1 { 
+    color: #333;
+    text-align: center;
+}
+
+/* [추가] 1. 부모 컨테이너에 flexbox 속성을 적용 */
+.group-container {
+    display: flex;            /* 자식 요소(조)들을 가로로 나열 */
+    justify-content: center;  /* 조들을 가운데 정렬 (선택 사항) */
+    gap: 20px;                /* 조와 조 사이의 간격 (선택 사항) */
+}
+
+/* 2. 기존 .group-box 스타일 (이미지처럼 꾸미기 위한 예시) */
+.group-box {
+    width: flex;             /* (선택) 각 조의 가로 조정 */
+    min-height: 250px;        /* (선택) 각 조의 최소 높이 */
+
+    /* --- 기존 스타일 --- */
+    border: 1px solid #ddd;
+    border-radius: 25px;      /* 이미지처럼 둥글게 수정 */
+    padding: 10px 50px;
+    background-color: #e0f7fa; /* 이미지처럼 하늘색으로 수정 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* (선택) 그림자 효과 */
+}
+
+/* [수정] .group-box 안의 ul 태그에 적용 */
+.group-box ul {
+    list-style: none;  /* 1. (핵심) 불릿(•)을 제거합니다 */
+    padding-left: 0; /* 2. (권장) 불릿이 사라진 후 남는 왼쪽 여백(들여쓰기)도 제거합니다 */
+    font-size: 20px;
+}
+
+h2 {
+    color: #0056b3;
+}
+
+li { 
+    line-height: 1.6; 
+    text-align: center;
+}
+
+p {
+	color: #333;
+    text-align: center;
+}
+
+button {
+    display: block;       /* [추가] 1. 버튼을 블록 요소로 변경 */
+    margin-left: auto;  /* [추가] 2. 왼쪽 여백을 '자동'으로 설정 */
+    margin-right: auto; /* [추가] 3. 오른쪽 여백을 '자동'으로 설정 */
+
+    /* (기존에 작성하신 스타일) */
+	width: 500px;
+	height: 50px;
+	border: 1px solid #ddd;
+    border-radius: 25px;
+    background-color: deepskyblue;
+	
+	font-size: 16px;
+}
