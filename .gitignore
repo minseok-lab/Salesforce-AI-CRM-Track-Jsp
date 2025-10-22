@@ -1,0 +1,16 @@
+# Eclipse (STS) IDE 설정 파일
+.metadata/
+.settings/
+.classpath
+.project
+
+# Java 빌드 출력 폴더
+build/
+bin/
+
+# 로그 파일
+*.log
+
+# 기타 IDE 파일
+.idea/
+*.iml
